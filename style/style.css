@@ -1,0 +1,36 @@
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.main{
+    background-color: #343A40;
+    display: grid;
+    place-content: center;
+    width: 800px;
+    height: 500px;
+    padding-top: 60px;
+    position: relative;
+    z-index: -1;
+    border-top: 15px solid #fff;
+    border-left: 15px solid #fff;
+    border-bottom: 15px solid #fff;
+}
+.main img{
+    z-index: 2;
+}
+.main::before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    border-top: 15px solid #343A40;
+    border-left: 15px solid #343A40;
+    border-bottom: 15px solid #343A40;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
